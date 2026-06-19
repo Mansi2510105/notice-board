@@ -1,40 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 📢 Campus Notice Board
 
-## Getting Started
+A full-stack, responsive web application for creating, managing, and broadcasting campus notices. Built to demonstrate end-to-end CRUD capabilities, server-side rendering, and secure database management.
 
-First, run the development server:
+**[View Live Demo]** *(Replace this text with your actual Vercel link!)*
 
-```bash
+## ✨ Features
+* **Full CRUD Functionality:** Create, Read, Update, and Delete notices.
+* **Server-Side Validation:** Secure API routes that validate incoming data before database interaction.
+* **Smart Sorting:** Urgent priority notices automatically float to the top of the feed.
+* **Optimistic UI Updates:** Instantaneous state updates on the frontend for destructive actions (like Delete) before requiring a page refresh.
+* **Fully Responsive:** Mobile-first design using Tailwind CSS.
+
+## 🛠️ Tech Stack
+* **Frontend:** Next.js (Pages Router), React, Tailwind CSS
+* **Backend:** Next.js API Routes (Node.js)
+* **Database:** PostgreSQL (Hosted on Neon)
+* **ORM:** Prisma v7 (with native PostgreSQL adapter)
+* **Deployment:** Vercel
+
+## 🚀 Getting Started (Local Development)
+
+If you want to run this project locally, follow these steps:
+
+### 1. Clone the repository
+\`\`\`bash
+git clone https://github.com/your-username/notice-board.git
+cd notice-board
+\`\`\`
+
+### 2. Install dependencies
+\`\`\`bash
+npm install
+\`\`\`
+
+### 3. Set up Environment Variables
+Create a `.env` file in the root directory and add your PostgreSQL connection string:
+\`\`\`env
+DATABASE_URL="postgresql://user:password@host/dbname?sslmode=require"
+\`\`\`
+
+### 4. Initialize the Database
+Run the Prisma migrations to set up your database schema:
+\`\`\`bash
+npx prisma migrate dev
+\`\`\`
+
+### 5. Start the Development Server
+\`\`\`bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+\`\`\`
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
