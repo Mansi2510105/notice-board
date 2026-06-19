@@ -24,7 +24,7 @@ If you want to run this project locally, follow these steps:
 
 ### 1. Clone the repository
 \`\`\`bash
-git clone git clone https://github.com/Mansi2510105/notice-board.git
+git clone https://github.com/Mansi2510105/notice-board.git
 cd notice-board
 \`\`\`
 
@@ -50,3 +50,18 @@ npx prisma migrate dev
 npm run dev
 \`\`\`
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## 💡 Future Improvements
+
+Given more time, I would implement user authentication and role-based access control so that only authorized users can create, edit, or delete notices. I would also add image upload support and advanced filtering options.
+
+## 🤖 AI Usage
+
+AI tools (ChatGPT and Gemini) were used during development for:
+
+Understanding Prisma and Neon database setup
+Debugging configuration and deployment issues
+Reviewing implementation approaches
+Generating ideas for UI improvements and project structure
+
+All code was reviewed, tested, modified, and integrated manually before being used in the final project.
