@@ -24,7 +24,7 @@ If you want to run this project locally, follow these steps:
 
 ### 1. Clone the repository
 \`\`\`bash
-git clone https://github.com/your-username/notice-board.git
+git clone git clone https://github.com/Mansi2510105/notice-board.git
 cd notice-board
 \`\`\`
 
