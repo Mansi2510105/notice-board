@@ -29,11 +29,7 @@ export default function Home() {
 
     const handleDelete = async (id) => {
       // 1. Safety Check
-      const isConfirmed = window.confirm("Are you sure you want to delete this notice? This action cannot be undone.");
-
-      if (!isConfirmed) {
-        return; // Stop here if they clicked "Cancel"
-      }
+      if (!window.confirm("Are you sure you want to delete this notice?")) return;
 
       try {
         // 2. Call our DELETE API endpoint
